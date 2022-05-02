@@ -1,0 +1,18 @@
+sizeOfBoard:15
+snakeGrowthPerEat:3
+timeBetweenFrames:250
+pixelsPerSquare:30
+borderGap:20
+backgroundColor:#D3D3D3
+headColor:#006400
+bodyColor:#90EE90
+appleColor:#FF0000
+#
+
+
+Notes:
+sizeOfBoard refers to the side length (both height and width)
+snakeGrowthPerEat refers to how many units the snake will grow for eating an "apple"
+timeBetweenFrames refers to the number of milliseconds before the next "frame" registers, in other words the delay between updates
+
+Hashtag (#) denotes the end of parameters so these notes below are possible.
