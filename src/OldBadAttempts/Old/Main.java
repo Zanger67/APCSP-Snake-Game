@@ -1,4 +1,4 @@
-package Old;
+package OldBadAttempts.Old;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -31,7 +31,7 @@ public class Main {
 
 
         public snake() throws FileNotFoundException {
-            filePath = System.getProperty("user.dir") + "\\src\\Old\\HighScores.txt";
+            filePath = System.getProperty("user.dir") + "\\src\\OldBadAttempts.Old\\HighScores.txt";
             FL = new File(filePath);
         }
 
