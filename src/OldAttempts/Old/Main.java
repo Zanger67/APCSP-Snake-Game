@@ -1,4 +1,4 @@
-package OldBadAttempts.Old;
+package OldAttempts.Old;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

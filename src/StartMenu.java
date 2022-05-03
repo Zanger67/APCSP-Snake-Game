@@ -16,7 +16,7 @@ public class StartMenu extends JFrame implements ActionListener {
         JPanel panel3 = new JPanel();
 
 
-        this.setSize(320,375);
+        this.setSize(300,375);
         this.setLocationRelativeTo(null);
         this.setResizable(true);
 

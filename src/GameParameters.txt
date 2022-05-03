@@ -1,6 +1,6 @@
 sizeOfBoard:15
 snakeGrowthPerEat:3
-timeBetweenFrames:250
+timeBetweenFrames:100
 pixelsPerSquare:30
 borderGap:20
 backgroundColor:#D3D3D3

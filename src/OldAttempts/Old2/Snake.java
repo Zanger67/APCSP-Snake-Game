@@ -1,4 +1,4 @@
-package OldBadAttempts.Old2;
+package OldAttempts.Old2;
 
 import javax.swing.*;
 import java.io.*;

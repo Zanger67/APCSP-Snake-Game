@@ -19,6 +19,7 @@ public class Game extends JFrame implements KeyListener, ActionListener {
     public int  lengthOfSnake, score;
 
     public int currentX, currentY;
+//    public JLabel displayScore;
 
 
     public int[][] mapInts;
@@ -29,7 +30,7 @@ public class Game extends JFrame implements KeyListener, ActionListener {
         initParameters();
 
         this.setName("Snakey Snek");
-        this.setSize(borderGap * 2 + sizeOfBoard * pixelsPerSquare,borderGap * 3 + sizeOfBoard * pixelsPerSquare);
+        this.setSize(borderGap * 2 + sizeOfBoard * pixelsPerSquare,borderGap * 5 + sizeOfBoard * pixelsPerSquare);
 
         mapInts = new int[sizeOfBoard][sizeOfBoard];
         mapInts[sizeOfBoard/2][sizeOfBoard/2] = lengthOfSnake;
@@ -43,6 +44,8 @@ public class Game extends JFrame implements KeyListener, ActionListener {
         direction = 'r';
         newDirection = direction;
 
+//        displayScore = new JLabel(Integer.toString(score));
+
 //        mainPanel = new JPanel();
 //
 //        mainPanel.setLayout(new GridLayout(sizeOfBoard, sizeOfBoard, 2,2));
@@ -55,6 +58,8 @@ public class Game extends JFrame implements KeyListener, ActionListener {
 
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+//        this.add(displayScore);
 
         this.repaint();
 
@@ -129,7 +134,7 @@ public class Game extends JFrame implements KeyListener, ActionListener {
                     return true;
                 }
             default :
-                System.out.println("1234");
+//                System.out.println("1234");
                 return false;
         }
     }
@@ -172,7 +177,7 @@ public class Game extends JFrame implements KeyListener, ActionListener {
         //adding new apple
         int numberOfFreeSquares = sizeOfBoard * sizeOfBoard - lengthOfSnake; // since the growth occurs after movement, there are still those spots to place apples on
         int chosenBox = (int) (Math.random() * numberOfFreeSquares);
-        System.out.println(chosenBox + "\t" + numberOfFreeSquares);
+//        System.out.println(chosenBox + "\t" + numberOfFreeSquares);
 
         int counter = 0;
         for (int i = 0; i < sizeOfBoard; i++){
@@ -414,6 +419,8 @@ public class Game extends JFrame implements KeyListener, ActionListener {
                     interruptedException.printStackTrace();
                 }
             }
+
+//            displayScore.setText(Integer.toString(score));
 
             validate();
             repaint();

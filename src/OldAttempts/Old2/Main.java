@@ -1,4 +1,4 @@
-package OldBadAttempts.Old2;
+package OldAttempts.Old2;
 
 import java.io.IOException;
 
