@@ -1,0 +1,27 @@
+Start Screen:
+This page displays the top 10 high scores recorded in a TXT file. 
+This is taken via a BufferedReader system.
+
+Game Screen:
+The game's parameters are set in a parameter file, containing the specifics for all colors (such as the snake's head, snake's body, apple, and background colors), time between frames, board size, etc.
+
+Inputs for the game are mapped to WSAD and Arrow keys and display in the console which direction the snake is heading (i.e. l = left, r = right, etc.). 
+
+
+High Score Screen:
+If the player achieves a high score (score = number of apples * 100), then they will be prompted for their name for it to be added to the high scores file.
+
+FOR DEMONSTRATION PURPOSES, THE NAME #BOB WILL BE USED.
+
+
+For Scoring:
+======
+Inputs: Keyboard input (direction of snake); User input of name on high score page (text box); file input and reading (high scores and game parameters).
+
+Lists: Matrix used for game map, recording snake position, apple position, etc.; ArrayLists for high score readings; label arrays for creating a multi-font and multi-sized set of text for certain JFrames.
+
+Procedures: All procedures are explained in the code's comments on the PDF.
+
+Algorithm: Selection of a new apple's position; calculation of snake's new position; adding of snake's length after eating an apple.
+
+Output: visual outputs via Java Graphics and JFrame text components.
